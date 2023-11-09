@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "strict": true,
+      "jsx": "preserve",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "lib": ["esnext", "dom"],
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true
+    },
+    "include": ["resources/vue/**/*", "resources/vue/**/*", "tests/**/*", "typings/**/*.d.ts"],
+    "exclude": ["node_modules"]
+}
