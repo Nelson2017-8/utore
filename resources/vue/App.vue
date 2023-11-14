@@ -1,13 +1,13 @@
 <template>
     <div>
-        Hello World   
+        Hello World
     </div>
     <div>Current Count: {{ counter.count }}</div>
 </template>
 
 
 <script setup lang="ts">
-    import { useCounterStore } from '@/stores/validateForm'
+    import { useCounterStore } from './stores/validateForm'
 
     const counter = useCounterStore()
 

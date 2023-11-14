@@ -1,2 +1,2 @@
-import './bootstrap';
-import './../vue/app.ts';
+import './bootstrap'
+import './../vue/app.ts'

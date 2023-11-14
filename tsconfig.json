@@ -12,6 +12,6 @@
       "isolatedModules": true,
       "noEmit": true
     },
-    "include": ["resources/vue/**/*", "resources/vue/**/*", "tests/**/*", "typings/**/*.d.ts"],
+    "include": ["resources/vue/**/*", "resources/vue/**/*", "tests/**/*", "typings/**/*.d.ts", "resources/js/**/*", "public/js/**/*"],
     "exclude": ["node_modules"]
 }
