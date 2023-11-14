@@ -1,32 +1,44 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
+    env: {
+        browser: true,
+        es2021: true,
     },
-    "extends": [
-        "standard-with-typescript",
-        "plugin:vue/vue3-essential"
+    extends: [
+        'standard-with-typescript',
+        'plugin:vue/vue3-essential',
+        '@vue/typescript/recommended',
     ],
-    "overrides": [
+    overrides: [
         {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
+            files: [
+                '.eslintrc.js',
+                '.eslintrc.cjs',
             ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
+            env: {
+                node: true,
+            },
+            parserOptions: {
+                sourceType: 'script',
+            },
+        },
     ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaVersion: 2021,
+        sourceType: 'module',
+        project: './tsconfig.json', // Ruta al archivo tsconfig.json de tu proyecto
+
     },
-    "plugins": [
-        "vue"
+    plugins: [
+        'vue',
     ],
-    "rules": {
-    }
-}
+    rules: {
+        'no-restricted-syntax': [
+            'error',
+            {
+                selector: 'ImportNamespaceSpecifier',
+                message: 'Se permite el uso de @ para importar módulos.',
+            },
+        ],
+    },
+};

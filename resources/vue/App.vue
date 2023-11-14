@@ -2,10 +2,18 @@
     <div>
         Hello World   
     </div>
+    <div>Current Count: {{ counter.count }}</div>
 </template>
-	
-<script lang="ts">
-    export default {
-        name: 'App'
-    }
+
+
+<script setup lang="ts">
+    import { useCounterStore } from '@/stores/validateForm'
+
+    const counter = useCounterStore()
+
+    counter.count++
+    // with autocompletion ✨
+    counter.$patch({ count: counter.count + 1 })
+    // or using an action instead
+    counter.increment()
 </script>
