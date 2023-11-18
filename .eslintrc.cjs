@@ -7,6 +7,13 @@ module.exports = {
         'standard-with-typescript',
         'plugin:vue/vue3-essential',
         '@vue/typescript/recommended',
+
+
+        'plugin:vue/base',
+         'eslint:recommended',
+         'plugin:vue/vue3-recommended',
+         //'plugin:prettier/recommended',
+         //'eslint-config-prettier'
     ],
     overrides: [
         {
@@ -22,17 +29,21 @@ module.exports = {
             },
         },
     ],
-    parser: '@typescript-eslint/parser',
+    parser: "vue-eslint-parser",
     parserOptions: {
         ecmaVersion: 2021,
         sourceType: 'module',
         project: './tsconfig.json', // Ruta al archivo tsconfig.json de tu proyecto
-
+        parser: '@typescript-eslint/parser',
     },
     plugins: [
-        'vue',
+        'vue'
     ],
     rules: {
+        '@typescript-eslint/indent': 'off',
+        //'@typescript-eslint/indent': ['error', 4, { SwitchCase: 1 }],
+        //'@typescript-eslint/indent': ['error', 'tab'],
+        'vue/multi-word-component-names': 'off',
         'no-restricted-syntax': [
             'error',
             {
@@ -40,5 +51,7 @@ module.exports = {
                 message: 'Se permite el uso de @ para importar módulos.',
             },
         ],
+        'vue/no-empty-script': 'off', // Desactiva el error de script vacío
+        'vue/no-empty-component-block': 'off', // Desactiva el error de bloque de componente vacío
     },
 };

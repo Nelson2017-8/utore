@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 
 // Importa tus componentes y define las rutas
-import Home from './components/Home.vue'
-import About from './components/About.vue'
+import Home from './components/pages/Home.vue'
+import Login from './components/pages/Login.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -11,9 +11,9 @@ const routes: RouteRecordRaw[] = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
+    path: '/login',
+    name: 'Login',
+    component: Login
   }
   // Agrega más rutas según tus necesidades
 ]

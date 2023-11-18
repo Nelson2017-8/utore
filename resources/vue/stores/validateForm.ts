@@ -13,3 +13,14 @@ export const useCounterStore = defineStore('counter', {
     },
   },
 })
+/***
+     import { useCounterStore } from './stores/validateForm'
+
+    const counter = useCounterStore()
+
+    counter.count++
+    // with autocompletion ✨
+    counter.$patch({ count: counter.count + 1 })
+    // or using an action instead
+    counter.increment()
+ **/
