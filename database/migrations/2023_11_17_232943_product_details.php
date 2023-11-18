@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('product_details', function (Blueprint $table) {
             $table->id();
             $table->text('description')->nullable();
-            $table->int('quantity');
+            $table->integer('quantity');
             $table->enum('state', ['Agotado', 'En Stock'])->default('Agotado');
             $table->float('price', 10, 2)->default(0);
             $table->unsignedBigInteger('product_id');
