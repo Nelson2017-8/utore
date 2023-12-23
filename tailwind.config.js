@@ -4,11 +4,17 @@
 //@import 'tailwindcss/utilities';
 
 export default {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+	content: [
+		'./resources/**/*.{html,js,ts,php,scss,vue}',
+		'./public/**/*.{html,js,ts,php,scss}',
+		"./node_modules/flowbite/**/*.js"
+	],
+	theme: {
+		extend: {},
+	},
+	plugins: [
+		require('flowbite/plugin')
+	],
 }
 
 // compiilar archivos css

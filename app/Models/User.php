@@ -28,6 +28,7 @@ class User extends Authenticatable
         'address',
         'email',
         'password',
+        'token',
         'active',
     ];
 
@@ -50,4 +51,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+	public function fullname()
+	{
+		return $this->first_name.''. $this->last_name;
+	}
 }

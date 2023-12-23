@@ -5,11 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/cache.css') }}">
+        @vite(['resources/sass/app.scss'])
     </head>
-    <body class="antialiased">
-        <main id="app"></main>
-
-
-    </body>
+    <body lang="es">
+		{!! $md !!}
+	</body>
 </html>

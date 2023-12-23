@@ -10,10 +10,10 @@ module.exports = {
 
 
         'plugin:vue/base',
-         'eslint:recommended',
-         'plugin:vue/vue3-recommended',
-         //'plugin:prettier/recommended',
-         //'eslint-config-prettier'
+        'eslint:recommended',
+        'plugin:vue/vue3-recommended',
+        //'plugin:prettier/recommended',
+        //'eslint-config-prettier'
     ],
     overrides: [
         {
@@ -40,10 +40,13 @@ module.exports = {
         'vue'
     ],
     rules: {
-        '@typescript-eslint/indent': 'off',
-        //'@typescript-eslint/indent': ['error', 4, { SwitchCase: 1 }],
-        //'@typescript-eslint/indent': ['error', 'tab'],
+        //'@typescript-eslint/indent': 'off',
+        '@typescript-eslint/indent': ['error', 4, {SwitchCase: 1}],
+        '@typescript-eslint/indent': ['error', 'tab'],
+        'no-tabs': 0,
         'vue/multi-word-component-names': 'off',
+        'vue/no-reserved-component-names': 'off',
+        'no-trailing-spaces': 'off',
         'no-restricted-syntax': [
             'error',
             {

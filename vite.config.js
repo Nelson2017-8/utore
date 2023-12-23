@@ -5,7 +5,12 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
+            input: [
+				'resources/sass/app.scss',
+				'resources/js/loader.js',
+				'resources/js/dashboard.js',
+				'resources/js/app.js',
+			],
             refresh: true,
         }),
         vue({
@@ -21,6 +26,7 @@ export default defineConfig({
         alias: {
             '@': '/resources/vue',
             'vue': 'vue/dist/vue.esm-bundler.js',
+            //'vue3-carousel': 'vue3-carousel/dist/carousel.es.js'
         },
     },
 });

@@ -1,0 +1,99 @@
+{
+	"general": {
+		"app": "Laragon",
+		"search": "Buscar"
+	},
+	"validations": {
+		"required": "Este campo es requerido",
+		"email": "Este campo no es un correo electrónico válido",
+		"minLength": "Este campo debe tener un mínimo de {0} caracteres",
+		"maxLength": "Este campo debe tener un máximo de {0} caracteres"
+	},
+	"cards": {
+		"login": {
+			"title": "K-WD",
+			"description": "Con el poder de {app}, ahora puede concentrarse solo en los funcionarios de sus productos digitales, mientras deja el diseño de la interfaz de usuario en nosotros!",
+			"cta": "¡Comenzar!",
+			"not_account": "¿No tienes una cuenta?",
+			"terms": [
+				"Lea nuestros",
+				"términos",
+				"y",
+				"condiciones"
+			]
+		}
+	},
+	"forms": {
+		"email": "Correo Electrónico",
+		"password": "Contraseña",
+		"remember": "Recordarme",
+		"forgot": "¿Olvidaste tu contraseña?",
+		"name": "Nombre",
+		"first_name": "Nombre",
+		"last_name": "Apellido",
+		"select_role": "Seleccionar Rol",
+		"gender": "Género",
+		"birthday": "Fecha de Nacimiento",
+		"address": "Dirección",
+		"phone": "Teléfono",
+		"age": "Edad"
+	},
+	"pages": {
+		"home": "Inicio",
+		"profile": "Perfil",
+		"settings": "Configuraciones",
+		"products": "Productos",
+		"product": "Producto",
+		"categories": "Categorías",
+		"category": "Categoría",
+		"orders": "Pedidos",
+		"order": "Pedido",
+		"users": "Usuarios",
+		"user": "Usuario",
+		"sponsors": "Patrocinadores",
+		"sponsor": "Patrocinador",
+		"cart": "Carrito",
+		"checkout": "Pagar",
+		"no_results": "No se encontraron resultados",
+		"notification": "Notificación",
+		"favorite": "Favorito",
+		"add_favorite": "Agregar a favoritos",
+		"remove_favorite": "Quitar de favoritos",
+		"add_to_cart": "Agregar al carrito",
+		"remove_from_cart": "Quitar del carrito",
+		"checkout": "Pagar",
+		"cart": "Carrito",
+		"cart_empty": "Carrito vacío",
+		"shop": "Tienda",
+		"contact": "Contacto",
+		"about": "Acerca de",
+		"terms": "Términos",
+		"conditions": "Condiciones"
+	},
+	"buttons": {
+		"login": "Iniciar Sesión",
+		"is_account": "I already have an account",
+		"register": "Registrarse",
+		"reset": "Reiniciar Contraseña",
+		"submit": "Enviar",
+		"cancel": "Cancelar",
+		"close": "Cerrar",
+		"save": "Guardar",
+		"edit": "Editar",
+		"delete": "Eliminar",
+		"add": "Agregar",
+		"back": "Atrás",
+		"next": "Siguiente",
+		"upload": "Subir",
+		"download": "Descargar",
+		"save_and_close": "Guardar y Cerrar",
+		"save_and_add": "Guardar y Agregar",
+		"save_and_edit": "Guardar y Editar",
+		"save_and_next": "Guardar y Siguiente",
+		"save_and_back": "Guardar y Atrás",
+		"save_and_upload": "Guardar y Subir",
+		"save_and_download": "Guardar y Descargar",
+		"save_and_delete": "Guardar y Eliminar",
+		"save_and_cancel": "Guardar y Cancelar"
+	}
+}

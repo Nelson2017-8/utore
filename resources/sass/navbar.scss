@@ -1,0 +1,46 @@
+// navbar
+.input-search {
+    @include set-max-width(30em);
+    @media (max-width: 768px) {
+        @include set-max-width(15em);
+    }
+}
+
+.container-navbar {
+    width: 100%;
+
+    @media (max-width: 640px) {
+        @include set-px(10px)
+    }
+
+    @media (min-width: 640px) {
+        @include set-max-width(640px);
+    }
+
+    @media (min-width: 768px) {
+        @include set-max-width(700px);
+    }
+
+    @media (min-width: 1024px) {
+        @include set-max-width(950px);
+    }
+
+    @media (min-width: 1150px) {
+        @include set-max-width(1150px);
+    }
+    @media (min-width: 1280px) {
+        @include set-max-width(1280px);
+    }
+
+    @media (min-width: 1536px) {
+        @include set-max-width(1536px);
+    }
+}
+
+.w-menu-navbar{
+    @include set-width(8.5em);
+
+
+}
+
+

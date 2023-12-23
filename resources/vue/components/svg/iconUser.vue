@@ -1,0 +1,28 @@
+<template>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        :class="className"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+    >
+        <path
+            fill-rule="evenodd"
+            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+            clip-rule="evenodd"
+        />
+    </svg>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+	name: 'IconUser',
+	props: {
+		className: {
+			type: String, // h-5 w-5 text-gray-500
+			required: true
+		}
+	}
+})
+</script>

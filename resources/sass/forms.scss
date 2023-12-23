@@ -1,0 +1,8 @@
+.input-msg-errors{
+	@apply text-red-600 font-medium text-xs mt-1 w-full;
+}
+.input-error{
+	input, select, textarea{
+		@apply border border-red-600;
+	}
+}
